@@ -26,12 +26,12 @@ module.exports = ->
   require('./routes/routes')(app)
   #Error handling?
 
-  if (app.get('env') == 'development') 
-    app.use((err, req, res, next) ->
-      res.status(err.status || 500)
-      res.render('error', {
-        message: err.message
-        error: err
-      })
-      
-    )
+#  if (app.get('env') == 'development') 
+#    app.use((err, req, res, next) ->
+#      res.status(err.status || 500)
+#      res.render('error', {
+#        message: err.message
+#        error: err
+#      })
+#      
+#    )
