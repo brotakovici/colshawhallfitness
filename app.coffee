@@ -17,11 +17,11 @@ module.exports = ->
 
   app.set('port', process.env.PORT || 8008)
 
-  app.use( ->
-    err = new Error('Not found')
-    err.status = 404
-    next(err)
-  )
+#  app.use((next) ->
+#    err = new Error('Not found')
+#    err.status = 404
+#    next(err)
+#  )
 
   require('./routes/routes')(app)
   #Error handling?
