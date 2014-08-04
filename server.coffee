@@ -1,4 +1,4 @@
-app = require('./app')(process.env.NODE_ENV)
+app = require('./app')
 http = require('http')
 
 http.createServer(app).listen(app.get('port'), ->
