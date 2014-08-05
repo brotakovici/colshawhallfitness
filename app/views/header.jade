@@ -1,16 +1,22 @@
-nav(role='navigation').navbar.navbar-default.navbar-fixed-topi
-  .container-fluid
-    .navbar-header.navbar-right
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+nav(role='navigation').navbar.navbar-default.navbar-fixed-top
+  .container-fluid.navbar-left.fuckin-go-left
+    a(href='/')
+      img(src='http://placehold.it/100x50')
+  .container-fluid.navbar-right
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse').navbar-right
         .sr-only Toggle navigation
         .icon-bar
         .icon-bar
         .icon-bar
         .icon-bar
-        a(href='#').active Placeholder for logo
-
-      .collapse.navbar-collapse
-        .nav.navbar-nav
+        .icon-bar
+      //-
+        a(href='#').navbar-brand 
+          .navbar-logo
+             img(src='http://placehold.it/100x50')
+      .collapse.navbar-collapse#navbar-collapse
+        ul.nav.navbar-nav
           li
             a(href='/about-us') About us
           li
