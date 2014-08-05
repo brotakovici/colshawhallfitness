@@ -1,3 +1,41 @@
-include header
-include layout 
+extends layout 
 
+block header
+  include header
+
+block content
+  .carousel-container.fuckin-go-left
+    .carousel.slide(data-ride='carousel')#carousel-generic
+      ol.carousel-indicators
+        li.active(data-target='#carousel-generic', data-slide-to='0')
+        li(data-target='#carousel-generic', data-slide-to='1')
+        li(data-target='#carousel-generic', data-slide-to='2')
+
+      .carousel-inner
+        .item.active
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            one one one one
+        .item
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            two two two
+        .item
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            three three three
+
+      a(href='#carousel-generic', role='button', data-slide='prev').left.carousel-control
+        .glyphicon.glyphicon-chevron-left
+      a(href='#carousel-generic', role='button', data-slide='next').right.carousel-control
+        .glyphicon.glyphicon-chevron-right
+  
+  .container
+    .row
+      .col-md-12
+        a(href='#')
+          img(src='http://placehold.it/300x300')
+        a(href='#')
+          img(src='http://placehold.it/300x300')
+        a(href='#')
+          img(src='http://placehold.it/300x300')

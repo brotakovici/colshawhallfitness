@@ -1,21 +1,21 @@
-module.exports = (app) -> 
+module.exports = (app) ->
   
   app.get('/', (req, res) ->
     res.render('index')
   )
 
-  app.get('/contact-location', (req, res) ->
+  app.get('/location', (req, res) ->
+    res.render('location')
+  )
+  
+  app.get('/contact', (req, res) ->
     res.render('contact')
   )
 
-  app.get('/services', (req, res) ->
+  app.get('/personal-training', (req, res) ->
     res.render('services')
   )
 
-  app.get('/studio', (req, res) ->
-    res.render('studio')
-  )
-
-  app.get('/about', (req, res) ->
-    res.render('/about')
+  app.get('/about-us', (req, res) ->
+    res.render('about-us')
   )
