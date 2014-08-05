@@ -2,6 +2,8 @@ html, body
   font-size 11pt
 
 .navbar
+  margin-bottom 0
+  border-bottom 0
   .nav
     li
       div
@@ -15,3 +17,29 @@ html, body
   .item
     img
       margin 0 auto
+
+.features
+  margin-top 3rem
+  .three-feature-layout
+    .feature
+      a
+        display inline-block
+        padding 5px
+        border 1px solid #ccc
+        border-radius 5px
+        transition border-color 0.5s
+        &:hover
+          border-color #428bca
+      &.first-feature
+        text-align left
+      &.second-feature
+        text-align center
+      &.third-feature
+        text-align right
+
+.footer
+  margin-top 3rem
+  padding 1rem
+  background #ddd
+  .copyright
+    text-align right
