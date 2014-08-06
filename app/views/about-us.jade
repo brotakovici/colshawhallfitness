@@ -1,0 +1,40 @@
+extends layout 
+
+block header
+  include header
+
+block content
+  .carousel-container.fuckin-go-left
+    .carousel.slide(data-ride='carousel')#carousel-generic
+      ol.carousel-indicators
+        li.active(data-target='#carousel-generic', data-slide-to='0')
+        li(data-target='#carousel-generic', data-slide-to='1')
+        li(data-target='#carousel-generic', data-slide-to='2')
+
+      .carousel-inner
+        .item.active
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            one one one one
+        .item
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            two two two
+        .item
+          img(src='http://placehold.it/1366x500')
+          .carousel-caption
+            three three three
+
+      a(href='#carousel-generic', role='button', data-slide='prev').left.carousel-control
+        .glyphicon.glyphicon-chevron-left
+      a(href='#carousel-generic', role='button', data-slide='next').right.carousel-control
+        .glyphicon.glyphicon-chevron-right
+
+  .container.text
+    .row
+      .col-md-6
+        p
+          As Cheshire’s most exclusive personal training company, Colshaw Hall Fitness has been providing it’s clients with incredible results and an unrivaled experience since 2012. Over the past few years Colshaw Hall has delivered an impeccable service and helped  transform physiques from completely untrained novices shedding stones in weight, to honing the bodies of sports people and actors, helping them gain top awards for performance and even the accolade of ‘soap awards sexiest female’.
+        p
+          Along with being in the most exclusive setting, Colshaw Hall Fitness boasts the best equipped personal training studio, combining this with Cheshire’s top personal trainers makes it the number one place to achieve your desired results.
+
