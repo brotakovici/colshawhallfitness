@@ -13,7 +13,7 @@ module.exports = (app) ->
   )
 
   app.get('/personal-training', (req, res) ->
-    res.render('services')
+    res.render('personal-training')
   )
 
   app.get('/about-us', (req, res) ->
