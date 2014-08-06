@@ -1,1 +1,47 @@
-cock
+extends layout
+  
+block header
+  include header
+
+block content
+  .container
+    .row
+      .col-md-12
+        ol.breadcrumb.line
+          li
+            a(href='/') Home
+          li.active
+            a(href='/contact') Contact
+
+  .container.page-content
+    .row
+      .content-left.col-md-9
+        p
+          | If you wish to know anymore information about Colshaw Hall Fitness or to book yourself in, please do not hesitate to contact us.
+      
+      .sidebar.col-md-3.side-bitches
+        h3 Contact us
+        .sidebar-sections
+          .sidebar-section
+            .title Email
+            .content enquiries@colshawhallfitness.com
+          .sidebar-section
+            .title Phone
+            .content 01565 *** ***
+          .sidebar-section
+            .title Text
+            .content 07787103303
+        h3 Address
+        .sidebar-sections
+          .sidebar-section
+            .content Colshaw Hall Fitness
+          .sidebar-section
+            .content Colshaw Hall, Stocks Lane
+          .sidebar-section
+            .content Over Peover
+          .sidebar-section
+            .content Knutsford
+          .sidebar-section
+            .content Chehsire
+          .sidebar-section
+            .content WA16 8TW
