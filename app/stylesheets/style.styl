@@ -1,6 +1,6 @@
 html, body
   font-size 11pt
-  font-family 'Palatino Linotypei', 'Book Antiqua', 'Palatino', serif
+  font-family 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif
 
 .navbar
   margin-bottom 0
@@ -109,7 +109,6 @@ html, body
     margin-top 0
     line-height 1
     margin-bottom 1rem
-    bitches yes
   .sidebar-sections
     .sidebar-section
       margin-bottom 0.5rem
@@ -128,8 +127,24 @@ html, body
   padding-top 1rem
   font-weight bold
   font-size 1.5rem
-.contactus-label
+
+.contact-label
   a
-    transform rotate 45deg
-    vertical-align middle
+    display block
+    position fixed
+    right -3.5rem // half of the width minus half of the height
+    top 50%
+    z-index 9001
+    transform rotate(-90deg)
+
+    background white
+    padding 0.5rem 1rem
+    background #08c
+    color white
+    width 10rem
+    height 3rem
+    text-align center
+
+    font-weight bold
+    font-size 1.5rem
     text-decoration none
