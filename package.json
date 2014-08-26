@@ -16,6 +16,7 @@
     "coffee-script": "~1.7.1",
     "http": "*",
     "nib": "~1.0.3",
-    "stylus": "~0.47.3"
+    "stylus": "~0.47.3",
+    "serve-favicon": "~2.1.1"
   }
 }

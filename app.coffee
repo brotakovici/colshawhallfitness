@@ -1,6 +1,6 @@
 express = require('express')
 path = require('path')
-favicon = require('static-favicon')
+favicon = require('serve-favicon')
 logger = require('morgan')
 cookieParser = require('cookie-parser')
 bodyParser = require('body-parser')
@@ -11,7 +11,6 @@ app = express()
 app.set('view engine', 'jade')
 app.set('views', path.join(__dirname, 'app/views'))
 
-app.use(favicon())
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({urlencoded: true}))
@@ -27,6 +26,7 @@ app.use(stylus.middleware({
   )
 }))
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(favicon(__dirname + '/public/images/favicon.ico'))
 
 app.use(cookieParser())
 
