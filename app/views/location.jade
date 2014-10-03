@@ -5,22 +5,7 @@ block header
   include header
 
 block content
-  .carousel-container.fuckin-go-left
-    .carousel.slide(data-ride='carousel')#carousel-generic
-      ol.carousel-indicators
-        li.active(data-target='#carousel-generic', data-slide-to='0')
-        li(data-target='#carousel-generic', data-slide-to='1')
-
-      .carousel-inner
-        .item.active
-          img.machines(src='/images/Location2.jpg')
-        .item
-          img.cottage(src='/images/home1&location2.jpg')
-
-      a(href='#carousel-generic', role='button', data-slide='prev').left.carousel-control
-        .glyphicon.glyphicon-chevron-left
-      a(href='#carousel-generic', role='button', data-slide='next').right.carousel-control
-        .glyphicon.glyphicon-chevron-right
+  include map
   
   .contact-label
     a(href='/location#contact') Contact Us
